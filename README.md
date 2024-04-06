@@ -11,6 +11,12 @@ Understanding the macOS architecture and terminal environments is crucial:
 
 ## Installation Steps
 
+### Using Rosetta for Compatibility
+
+Certain steps or applications may require running under the Intel architecture emulation provided by Rosetta, especially when dealing with older software versions or tools that have not yet been updated for ARM64 architecture. This is essential for ensuring compatibility and stable operation of software not natively supported by Apple Silicon.
+
+For instance, when installing Ruby 2.3.8, you might encounter issues with native extensions or dependencies that were built for x86_64 architecture. In such cases, running the installation commands under Rosetta ensures these components can be compiled and executed as intended.
+
 ### Install Homebrew
 
 Homebrew is a package manager for macOS. Install it by running:
