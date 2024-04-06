@@ -7,7 +7,7 @@ This repository provides scripts and detailed instructions for installing older 
 Understanding the macOS architecture and terminal environments is crucial:
 
 - **ARM64**: The native Apple Silicon architecture, offering optimized performance.
-- **x86_64 (Rosetta)**: An emulation layer for Intel-based applications, enabling them to run on Apple Silicon. Use the `arch x86_64` command with Rosetta for compatibility.
+- **x86_64 (Rosetta)**: An emulation layer for Intel-based applications, enabling them to run on Apple Silicon.
 
 ## Installation Steps
 
