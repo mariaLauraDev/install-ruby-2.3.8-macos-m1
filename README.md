@@ -71,6 +71,7 @@ Use flags to install an older version of ruby
 optflags=-Wno-error=implicit-function-declaration ASDF_RUBY_BUILD_VERSION=v20220630 asdf install ruby 2.3.8
 ```
 Font: https://github.com/asdf-vm/asdf-ruby/issues/301#issuecomment-1934846430 
+
 Set a ruby version 
 ```sh
 asdf local ruby 2.3.8
