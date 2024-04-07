@@ -85,9 +85,9 @@ OpenSSL is an open-source library that provides a robust set of cryptographic to
 
 Older Ruby versions, developed when OpenSSL 1.0 and 1.1 were the prevailing standards, are inherently tied to these versions of OpenSSL due to compatibility and security reasons. Here’s why:
 
-- API Compatibility: OpenSSL 1.0 and 1.1 provide specific APIs (Application Programming Interfaces) that these Ruby versions rely on for secure network communications, SSL/TLS encryption, and other security features. Newer versions of OpenSSL, such as OpenSSL 3.x, might introduce breaking changes in their APIs, which can lead to compatibility issues with Ruby code written against the older APIs.
+- **API Compatibility**: OpenSSL 1.0 and 1.1 provide specific APIs (Application Programming Interfaces) that these Ruby versions rely on for secure network communications, SSL/TLS encryption, and other security features. Newer versions of OpenSSL, such as OpenSSL 3.x, might introduce breaking changes in their APIs, which can lead to compatibility issues with Ruby code written against the older APIs.
 
-- Feature Set: Each OpenSSL version supports a distinct set of cryptographic algorithms and protocols. Older Ruby versions depend on the feature set and behavior of OpenSSL 1.0 or 1.1 to function correctly, especially for operations like establishing HTTPS connections or signing data.
+- ** Feature Set**: Each OpenSSL version supports a distinct set of cryptographic algorithms and protocols. Older Ruby versions depend on the feature set and behavior of OpenSSL 1.0 or 1.1 to function correctly, especially for operations like establishing HTTPS connections or signing data.
 
 #### Use flags to install an older version of ruby. 
 ```sh
