@@ -39,28 +39,6 @@ Homebrew is a package manager for macOS. Install it by running:
 brew install git
 ```
 
-### Generate and Configure SSH Keys
-For GitHub or GitLab, use the ed25519 algorithm to create SSH keys. Modern macOS versions emphasize security and efficiency, particularly in how SSH keys are generated and managed. SSH keys are a fundamental part of secure communication between your machine and services like GitHub, GitLab, or servers. They provide a more secure way of logging into a server than using a password alone. As part of this security strategy, macOS encourages the use of the Ed25519 algorithm for generating SSH keys over the older SHA (Secure Hash Algorithm) based keys, like RSA.
-
-```sh
-ssh-keygen -t ed25519 -C "your_email@example.com"
-```
-
-Then, add the generated SSH keys to your SSH agent:
-
-```sh
-touch ~/.ssh/config
-sudo nano ~/.ssh/config
-```
-In the ~/.ssh/config file, add:
-
-```sh
-Host *
-  AddKeysToAgent yes
-  UseKeychain yes
-  IdentityFile ~/.ssh/id_ed25519
-```
-
 ### Install Development Tools
 asdf is a version manager used to install and manage multiple runtime versions of languages like Ruby, Node.js, and others, directly from the command line. It offers a flexible way to switch between different versions of languages and tools, making it easier to manage dependencies and development environments for various projects.
 ```sh
