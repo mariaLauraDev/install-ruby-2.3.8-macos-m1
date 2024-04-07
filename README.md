@@ -118,6 +118,16 @@ Check if Rails is correctly installed and can download gems:
 curl -o doctor.rb https://raw.githubusercontent.com/mislav/ssl-tools/8b3dec4/doctor.rb
 ruby doctor.rb
 ```
+If everything is set up correctly, you should have an output like this:
+```sh
+/Users/<your_user>/.asdf/installs/ruby/2.3.8/bin/ruby (2.3.8-p459)
+OpenSSL 1.0.2u  20 Dec 2019: /Users/marialaura/.asdf/installs/ruby/2.3.8/openssl/ssl
+SSL_CERT_DIR=""
+SSL_CERT_FILE=""
+
+HEAD https://status.github.com:443
+OK
+```
 
 ###  Final Steps
 After completing these steps, your system should be ready for Ruby development using older versions on macOS with M1 chips. For further assistance or troubleshooting, consult the documentation or open an issue in this repository.
