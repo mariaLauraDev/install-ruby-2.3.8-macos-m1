@@ -121,7 +121,7 @@ ruby doctor.rb
 If everything is set up correctly, you should have an output like this:
 ```sh
 /Users/<your_user>/.asdf/installs/ruby/2.3.8/bin/ruby (2.3.8-p459)
-OpenSSL 1.0.2u  20 Dec 2019: /Users/marialaura/.asdf/installs/ruby/2.3.8/openssl/ssl
+OpenSSL 1.0.2u  20 Dec 2019: /Users/<your_user>/.asdf/installs/ruby/2.3.8/openssl/ssl
 SSL_CERT_DIR=""
 SSL_CERT_FILE=""
 
