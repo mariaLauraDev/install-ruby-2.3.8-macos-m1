@@ -79,7 +79,7 @@ Add asdf ruby plugin
 ```sh
 asdf plugin add ruby
 ```
-Use flags to install an older version of ruby. Asdf will download a specific openssl version to compile ruby version that you want. 
+Asdf will download a specific OpenSSL version to compile ruby version that you want. But what is OpenSSL?
 
 OpenSSL is an open-source library that provides a robust set of cryptographic tools and protocols used to secure communications over computer networks. It is widely used for SSL/TLS encryption, which is essential for secure internet communication, including web browsing, email, and instant messaging. OpenSSL includes tools for generating keys and certificates, encrypting data, and much more. As a foundational component in the security infrastructure of the internet, OpenSSL enables developers to implement secure communication in their applications.
 
@@ -89,6 +89,7 @@ Older Ruby versions, developed when OpenSSL 1.0 and 1.1 were the prevailing stan
 
 - Feature Set: Each OpenSSL version supports a distinct set of cryptographic algorithms and protocols. Older Ruby versions depend on the feature set and behavior of OpenSSL 1.0 or 1.1 to function correctly, especially for operations like establishing HTTPS connections or signing data.
 
+#### Use flags to install an older version of ruby. 
 ```sh
 optflags=-Wno-error=implicit-function-declaration ASDF_RUBY_BUILD_VERSION=v20220630 asdf install ruby 2.3.8
 ```
