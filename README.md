@@ -40,7 +40,7 @@ brew install git
 ```
 
 ### Generate and Configure SSH Keys
-For GitHub or GitLab, use the ed25519 algorithm to create SSH keys:
+For GitHub or GitLab, use the ed25519 algorithm to create SSH keys. Modern macOS versions emphasize security and efficiency, particularly in how SSH keys are generated and managed. SSH keys are a fundamental part of secure communication between your machine and services like GitHub, GitLab, or servers. They provide a more secure way of logging into a server than using a password alone. As part of this security strategy, macOS encourages the use of the Ed25519 algorithm for generating SSH keys over the older SHA (Secure Hash Algorithm) based keys, like RSA.
 
 ```sh
 ssh-keygen -t ed25519 -C "your_email@example.com"
