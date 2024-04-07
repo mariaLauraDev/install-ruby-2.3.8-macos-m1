@@ -62,12 +62,16 @@ Host *
 ```
 
 ### Install Development Tools
+asdf is a version manager used to install and manage multiple runtime versions of languages like Ruby, Node.js, and others, directly from the command line. It offers a flexible way to switch between different versions of languages and tools, making it easier to manage dependencies and development environments for various projects.
 ```sh
-brew install asdf # follow asdf official steps!
+brew install asdf # follow ohters asdf official steps!
 brew install gpg gawk
-xcode-select --install
 brew install openssl@3 readline libyaml gmp
-brew install openssl@1.1
+```
+
+Xcode is an integrated development environment (IDE) for macOS, containing a suite of software development tools developed by Apple for developing software for macOS, iOS, iPadOS, watchOS, and tvOS. It provides developers with tools for developing, debugging, and publishing applications across Apple platforms. Tools package provides essential tools for developers who prefer or require terminal-based operations. These tools include compilers for C and other languages, Git, and many utilities crucial for software development.
+```sh
+xcode-select --install
 ```
 
 ### Install Ruby
@@ -75,7 +79,16 @@ Add asdf ruby plugin
 ```sh
 asdf plugin add ruby
 ```
-Use flags to install an older version of ruby
+Use flags to install an older version of ruby. Asdf will download a specific openssl version to compile ruby version that you want. 
+
+OpenSSL is an open-source library that provides a robust set of cryptographic tools and protocols used to secure communications over computer networks. It is widely used for SSL/TLS encryption, which is essential for secure internet communication, including web browsing, email, and instant messaging. OpenSSL includes tools for generating keys and certificates, encrypting data, and much more. As a foundational component in the security infrastructure of the internet, OpenSSL enables developers to implement secure communication in their applications.
+
+Older Ruby versions, developed when OpenSSL 1.0 and 1.1 were the prevailing standards, are inherently tied to these versions of OpenSSL due to compatibility and security reasons. Here’s why:
+
+- API Compatibility: OpenSSL 1.0 and 1.1 provide specific APIs (Application Programming Interfaces) that these Ruby versions rely on for secure network communications, SSL/TLS encryption, and other security features. Newer versions of OpenSSL, such as OpenSSL 3.x, might introduce breaking changes in their APIs, which can lead to compatibility issues with Ruby code written against the older APIs.
+
+- Feature Set: Each OpenSSL version supports a distinct set of cryptographic algorithms and protocols. Older Ruby versions depend on the feature set and behavior of OpenSSL 1.0 or 1.1 to function correctly, especially for operations like establishing HTTPS connections or signing data.
+
 ```sh
 optflags=-Wno-error=implicit-function-declaration ASDF_RUBY_BUILD_VERSION=v20220630 asdf install ruby 2.3.8
 ```
