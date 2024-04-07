@@ -131,3 +131,7 @@ OK
 
 ###  Final Steps
 After completing these steps, your system should be ready for Ruby development using older versions on macOS with M1 chips. For further assistance or troubleshooting, consult the documentation or open an issue in this repository.
+
+If you're curious to learn more about SSL and ruby compatibility, you can learn more from the article https://mislav.net/2013/07/ruby-openssl/. 
+
+I was able to learn a lot from it about subjects I didn't understand! I recommend it!
